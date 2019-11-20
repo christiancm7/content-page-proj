@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { withAuth } from '@okta/okta-react';
+import Breadcrumb from './subComponents/Breadcrumb'
 
 export default withAuth(
   class Home extends Component {
@@ -30,35 +31,19 @@ export default withAuth(
     };
 
     render() {
-      if (this.state.authenticated === null) return null;
-
-      const mainContent = this.state.authenticated ? (
-        <div>
-          <p className="lead">
-            You have entered the staff portal,{' '}
-            <Link to="/staff">click here</Link>
-          </p>
-          <button className="btn btn-light btn-lg" onClick={this.logout}>
-            Logout
-          </button>
-        </div>
-      ) : (
-        <div>
-          <p className="lead">
-            If you are a staff member, please get your credentials from your
-            supervisor
-          </p>
-          <button className="btn btn-dark btn-lg" onClick={this.login}>
-            Login
-          </button>
-        </div>
-      );
-
       return (
-        <div className="jumbotron">
-          <h1 className="display-4">Acme Staff Portal</h1>
-          {mainContent}
-        </div>
+        <div className="content-container">
+           <Breadcrumb />
+            {/* start main content area */}
+            <div className="main-content-container">
+            <main className="main">
+              main container
+            </main>
+            <aside className="sidebar">
+              aside container
+            </aside>
+            </div>
+          </div>
       );
     }
   }
