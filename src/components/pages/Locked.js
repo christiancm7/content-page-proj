@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import SideBar from './subComponents/SideBar'
+import Breadcrumb from './subComponents/Breadcrumb'
+import PageReport from './subComponents/PageReport'
+import { KeyPoints } from './subComponents/KeyPoints';
+import Comments from './subComponents/Comments'
 
 class Locked extends Component {
   state = {
@@ -18,11 +23,19 @@ class Locked extends Component {
     const { currentUserEmail, currentUserName } = this.state;
 
     return (
-      <div>
-        <h1>Welcome {currentUserName}</h1>
-        <p>Email: {currentUserEmail}</p>
-        <p>This is the staff page</p>
-      </div>
+      <div className="content-container">
+           <Breadcrumb title="Locked Research Overview"/>
+            {/* start main content area */}
+            <div className="main-content-container">
+            <main className="main">
+              <i id="video" className="massive grey play circle icon"></i>
+              <PageReport />
+              <KeyPoints />
+              <Comments />
+            </main>
+              <SideBar />
+            </div>
+          </div>
     );
   }
 }
