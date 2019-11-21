@@ -20,7 +20,7 @@ class App extends Component {
         <Security
           issuer="https://dev-366832.okta.com/oauth2/default"
           client_id="0oa1vrvbj1fPGz8ou357"
-          redirect_uri='http://localhost:3000//implicit/callback'
+          redirect_uri='https://option-alpha.netlify.com//implicit/callback'
           onAuthRequired={onAuthRequired}
         >
           <div className="App">
