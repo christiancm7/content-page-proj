@@ -37,7 +37,7 @@ export default withAuth(
       return (
         <div className="content-container">
            <Breadcrumb title="Research Overview"/>
-           <button className="btn btn-light btn-lg" onClick={this.logout}>
+           <button className="btn" title="Only click one time no error handling was done for the case of already logged out" onClick={this.logout}>
             Logout
           </button>
             <div className="main-content-container">
