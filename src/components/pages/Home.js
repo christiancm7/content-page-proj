@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import { withAuth } from '@okta/okta-react';
-import SideBar from './subComponents/SideBar'
+import SideBarUnlocked from './subComponents/SideBarUnlocked'
 import Breadcrumb from './subComponents/Breadcrumb'
 import PageReport from './subComponents/PageReport'
 import { KeyPoints } from './subComponents/KeyPoints';
@@ -38,7 +37,9 @@ export default withAuth(
       return (
         <div className="content-container">
            <Breadcrumb title="Research Overview"/>
-            {/* start main content area */}
+           <button className="btn btn-light btn-lg" onClick={this.logout}>
+            Logout
+          </button>
             <div className="main-content-container">
             <main className="main">
               <i id="video" className="massive grey play circle icon"></i>
@@ -46,7 +47,7 @@ export default withAuth(
               <KeyPoints />
               <Comments />
             </main>
-              <SideBar />
+              <SideBarUnlocked />
             </div>
           </div>
       );

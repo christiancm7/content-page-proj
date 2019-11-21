@@ -3,10 +3,13 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: #f5f6fa;
+  box-sizing: border-box;
 }
 p{
   background-color: none !important;
   color: grey;
+  line-height: 1.8;
+  font-size: 16px;
 }
 .mainLogo{
   width: 120px !important;
@@ -129,6 +132,16 @@ p{
   margin: 5%;
   max-width: 100% !important;
 }
+.text-container{
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  background: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 5%; 
+}
 .full-width{
   max-width: 100% !important;
   margin: 3% 0;
@@ -139,4 +152,41 @@ p{
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+#calls-report{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
+}
+.advert-price{
+  font-size: 32px;
+  font-weight: 600;
+  color: grey;
+}
+#reviews-container{
+  margin: 4% 0;
+}
+.review-item{
+  margin: 2% 0;
+  display: flex;
+  
+}
+.reviews-avatar{
+  flex-grow: 1;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews-text{
+  flex-grow: 3;
+  margin: 1%;
+}
+#avatar-name{
+  margin: 0;
+}
+#avatar-name2{
+  margin: 0;
 }

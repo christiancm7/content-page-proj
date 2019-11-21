@@ -1,16 +1,10 @@
 import React from 'react'
+import Advertisement from './Advertisement'
 
-export const SideBar = () => {
+export const SideBarLocked = () => {
     return (
         <aside className="sidebar">
-                <div className="ui segments">
-                  <div className="ui segment segment-title"><p>Resources Download</p></div>
-                  <div className="ui segment segment-spacing"><p><i className="file pdf outline icon"></i>Resource Title</p><i className="grey download icon"></i></div>
-                  <div className="ui segment segment-spacing"><p><i className="file pdf outline icon"></i>Resource Title</p><i className="grey download icon"></i></div>
-                  <div className="ui segment segment-spacing"><p><i className="file pdf outline icon"></i>Resource Title</p><i className="grey download icon"></i></div>
-                  <div className="ui segment segment-spacing"><p><i className="file pdf outline icon"></i>Resource Title</p><i className="grey download icon"></i></div>
-                  <div className="ui segment segment-spacing"><p><i className="file pdf outline icon"></i>Resource Title</p><i className="grey download icon"></i></div>
-                </div>
+                <Advertisement />
                 <div className="ui segments">
                   <div className="ui segment segment-title">
                     <i className="huge grey user circle outline icon"></i>
@@ -32,4 +26,4 @@ export const SideBar = () => {
     )
 }
 
-export default SideBar
+export default SideBarLocked
