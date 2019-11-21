@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import OktaSignIn from '@okta/okta-signin-widget';
 import '@okta/okta-signin-widget/dist/css/okta-sign-in.min.css';
 import mainLogo from '../../assets/img/logo2.png'
-//import '@okta/okta-signin-widget/dist/css/okta-theme.css';
 
 class SignInWidget extends Component {
   componentDidMount() {

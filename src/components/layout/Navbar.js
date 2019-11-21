@@ -11,7 +11,7 @@ class Navbar extends Component {
             <Link  to="/" className="item">
               <img src={mainLogo} alt="Logo" className="mainLogo"/>
             </Link>
-            <a  className="item">Menu 1</a>
+            <Link  to="/locked" className="item">Locked Pg</Link>
             <a  className="item">Menu 2</a>
             <a  className="item">Menu 3</a>
           </div>
