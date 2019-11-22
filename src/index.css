@@ -48,11 +48,8 @@ p{
   flex-grow: 4;
   height: 150vh;
   background-color: #f5f6fa !important;
-  /* padding: 1%; */
   margin: .5%;
   background: #f4f4f4;
-  /* border: 1px solid rgba(34, 36, 38, 0.15); */
-  /* background: #fff; */
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -65,9 +62,7 @@ p{
   max-width: 30%;
   flex-grow: 1;
   height: 60vh;
-  /* padding: 1%; */
   margin: .5%;
-  /* border: 1px solid rgba(34, 36, 38, 0.15); */
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
